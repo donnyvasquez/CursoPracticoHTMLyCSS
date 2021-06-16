@@ -27,12 +27,22 @@ a:hover {
     text-decoration: underline;
 }
 
+main a {
+    color: rgb(27, 27, 163);
+}
+
 .btn {
-    border: none;
-    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    padding: 0.7rem 1.25rem;
     background-color: var(--soft-gray);
     color: var(--grey);
     border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    border-color: rgba(30, 30, 30, 0.1);
 }
 
 .fbtn {
@@ -59,7 +69,7 @@ img {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: max-content auto max-content;
+    grid-template-rows: max-content auto max-content max-content;
 }
 
 nav ul {
@@ -86,7 +96,7 @@ header {
 }
 
 .profile-icon {
-    width: 24px;
+    width: 32px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -124,14 +134,19 @@ main #buscador:hover {
 main #buscador label {
     display: flex;
     color: var(--link);
-    font-size: 1.5rem;
     align-items: center;
+}
+
+main #buscador label .material-icons {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
 }
 
 main #buscador #keywords {
     width: -webkit-fill-available;
     border: none;
     outline: none;
+    font-size: 1.15rem;
 }
 
 main #buscador .microphone-icon {
@@ -142,6 +157,29 @@ main #buscador .microphone-icon {
 .buscador-tools {
     margin-top: 2rem;
     letter-spacing: 0.5rem;
+}
+
+#credit {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+#credit a {
+    padding: 0 0.25rem;
+}
+
+#prefooter {
+    background-color: var(--soft-gray);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+    color: var(--link);
+}
+
+#prefooter span {
+    padding: 0 1rem;
+    display: inline-block;
 }
 
 footer {
